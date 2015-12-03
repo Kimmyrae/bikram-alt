@@ -1,0 +1,59 @@
+<header>
+    <div class="jumbotron">
+      <div class="container">
+        <div class="row">
+          <div class="well center-block">
+            <h1 class="text-center">Find a Bikram Yoga Class</h1>
+            <p class="lead" class="text-center">Enter your location to find Authentic Bikram Yoga</p>
+            <div class="col-md-6 col-md-offset-3">
+              <div class="input-group input-group-lg"  id="search-bar">
+                <input type="text" class="form-control" placeholder="Seattle, WA" ng-model="city">
+                <span class="input-group-btn">
+                  <button data ng-click="findStudios()" class="btn btn-success"type="button"><i class="fa fa-search"></i></button>
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- End Jumbotron and main images -->
+  <!-- Results -->
+  <section>
+    <div class="studio-data">
+      <h2 class="studio-listing-heading" ng-if="StudiosFound">Studios Found</h2>
+      <div class="individual-studio-data" ng-if="StudiosFound">
+        <dl class="results" ng-repeat="studio in StudiosFound | limitTo: 6">
+          <dt>Studio Name</dt>
+          <dd>{{studio.name}} </dd>
+          <dt>Location</dt>
+          <dd>{{studio.address}} </dd>
+          <dt>Website</dt>
+          <dd>{{studio.website}}</dd>
+      <!-- <dt>Photo</dt>
+          <dd><img ng-src="{{studio.imgUrl}}"/></dd> -->
+          <p class="save-button-container"> <button class="btn btn-xs btn-default" ng-click="saveStudio(studio)">Save This Studio!</button></p>
+        </dl>
+      </div>
+    </div>
+  </section>
+  <!-- End results -->
+
+  <!-- show local storage-->
+  <section>
+    <div class="saved">
+      <h2 class="studio-listing-heading">My Saved Studios</h2>
+      <dl class="myStudios" ng-repeat="studio in storage.savedStudioList">
+        <dt>Studio</dt>
+        <dd>{{studio.name}}</dd>
+        <dt>Location</dt>
+        <dd>{{studio.address}} </dd>
+        <dt>Website</dt>
+        <dd>{{studio.website}}</dd>
+    <!--    <dt>Photo</dt>
+        <dd><img ng-src="{{studio.imgUrl}}"/></dd> -->
+        <p class="save-button-container"> <button class="btn btn-xs btn-default" ng-click="deleteStudio(studio)">Remove</button></p>
+      </dl>
+    </div>
+  </section>

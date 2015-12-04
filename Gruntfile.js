@@ -16,7 +16,8 @@ module.exports = function (grunt) {
   require('jit-grunt')(grunt, {
     useminPrepare: 'grunt-usemin',
     ngtemplates: 'grunt-angular-templates',
-    cdnify: 'grunt-google-cdn'
+    cdnify: 'grunt-google-cdn',
+    buildcontrol: 'grunt-build-control'
   });
 
   // Configurable paths for the application
@@ -66,7 +67,20 @@ module.exports = function (grunt) {
         ]
       }
     },
-
+    buildcontrol: {
+         options: {
+           dir: 'dist',
+           commit: true,
+           push: true,
+           message: 'Built %sourceName% from commit %sourceCommit% on branch %sourceBranch%'
+         },
+         pages: {
+           options: {
+             remote: 'git@github.com:Kimmyrae/bikram-alt.git',
+             branch: 'gh-pages'
+           }
+         }
+       },
     // The actual grunt server settings
     connect: {
       options: {

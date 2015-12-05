@@ -1,0 +1,22 @@
+.navbar {
+  margin-bottom: 0;
+  border-radius: 0;
+//  font-family: 'Poiret One', sans-serif;
+  font-family: 'Droid Serif', serif;
+  font-size: 18px;
+
+  .navbar-header {
+
+    #logo {
+      background-image: url('../images/orangeTiger.png');
+      background-size: cover;
+      width: 150px;
+      height: 50px;
+      margin: 0;
+    }
+
+    #logo-text {
+      visibility: hidden;
+    }
+  }
+}

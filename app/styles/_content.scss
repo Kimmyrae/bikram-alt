@@ -1,0 +1,86 @@
+// HOME SCREEN
+
+.jumbotron {
+  min-height: 95vh;
+  //  background-image: url('../images/yoga-wallpaper2.jpg');
+  background-image: url('../images/breathing2.jpg');
+  background-size: cover;
+  margin-bottom: 0;
+
+  .well {
+    text-align: center;
+    width: 75%;
+    min-height: 350px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-color: #000;
+    font-family: 'Droid', serif;
+
+    h1 {
+      padding-top: 3%;
+      padding-bottom: 3%;
+    }
+
+    .btn-success {
+      background-color: #000;
+      border-color: #000;
+    }
+
+    #search-bar {
+      padding-top: 4%;
+      padding-bottom: 4%;
+    }
+  }
+}
+
+
+
+// ABOUT SECTION
+
+h1 {
+  font-family: 'Droid', serif;
+}
+h2 {
+  font-family: 'Droid', serif;
+}
+.caption {
+  h3 {
+    margin-bottom: 5%;
+  }
+
+  p {
+    padding: 2%;
+  }
+
+}
+
+
+
+/*
+// SEARCH BAR
+#search-bar {
+	padding-left: 10%;
+	padding-right: 10%;
+}
+*/
+//SELLING POINTS
+
+#selling-points {
+  min-height: 90vh;
+}
+
+// FOOTER
+
+.footer {
+  min-height: 15vh;
+  background-color: #222;
+
+}
+
+.footer-text {
+  color: #FCDED4;
+  font-family: 'Droid Serif', serif;
+  font-size: 16px;
+  text-align: center;
+  line-height: 15vh;
+  margin: 0;
+}

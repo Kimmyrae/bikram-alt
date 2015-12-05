@@ -8,7 +8,7 @@
               <div class="input-group input-group-lg"  id="search-bar">
                 <input type="text" class="form-control" placeholder="Seattle, WA" ng-model="city">
                 <span class="input-group-btn">
-                  <button data ng-click="findStudios()" class="btn btn-success"type="button"><i class="fa fa-search"></i></button>
+                  <button data ng-click="findStudios()" class="btn btn-success"type="button" onClick="document.getElementById('search-results').scrollIntoView();">Search!</button>
                 </span>
               </div>
             </div>
@@ -19,7 +19,7 @@
   <!-- End Jumbotron and main images -->
   <!-- Results -->
   <section>
-    <div class="studio-data">
+    <div class="studio-data" id="search-results">
       <h2 class="studio-listing-heading" ng-if="StudiosFound">Studios Found</h2>
       <div class="individual-studio-data" ng-if="StudiosFound">
         <dl class="results" ng-repeat="studio in StudiosFound | limitTo: 6">

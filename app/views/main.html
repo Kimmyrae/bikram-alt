@@ -3,7 +3,7 @@
         <div class="row">
           <div class="well center-block">
             <h1 class="text-center">Find a Bikram Yoga Class</h1>
-            <p class="lead" class="text-center">Enter your location to find Authentic Bikram Yoga</p>
+            <p class="lead" class="text-center">Enter your city to find Authentic Bikram Yoga anywhere in the world!</p>
             <div class="col-md-6 col-md-offset-3">
               <div class="input-group input-group-lg"  id="search-bar">
                 <input type="text" class="form-control" placeholder="Seattle, WA" ng-model="city">
@@ -22,7 +22,7 @@
     <div class="studio-data" id="search-results">
       <h2 class="studio-listing-heading" ng-if="StudiosFound">Studios Found</h2>
       <div class="individual-studio-data" ng-if="StudiosFound">
-        <dl class="results" ng-repeat="studio in StudiosFound | limitTo: 6">
+        <dl class="results" ng-repeat="studio in StudiosFound | limitTo: 12">
           <dt>Studio Name</dt>
           <dd>{{studio.name}} </dd>
           <dt>Location</dt>

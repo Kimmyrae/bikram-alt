@@ -9,6 +9,7 @@
   letter-spacing: 2px;
   outline: none;
 
+
   &:active {
     background-color: #9B1D64;
     outline: none;
@@ -18,4 +19,9 @@
     background-color: #B3B3B3;
     cursor: not-allowed;
   }
+}
+
+.save-button-container {
+ margin-top: 5%;
+
 }

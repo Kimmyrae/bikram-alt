@@ -31,7 +31,7 @@
           <dd>{{studio.website}}</dd>
       <!-- <dt>Photo</dt>
           <dd><img ng-src="{{studio.imgUrl}}"/></dd> -->
-          <p class="save-button-container"> <button class="btn btn-xs btn-default" ng-click="saveStudio(studio)">Save This Studio!</button></p>
+          <p class="save-button-container"> <button class="btn btn-xs btn-default" ng-click="saveStudio(studio)" onClick="document.getElementById('saved').scrollIntoView();">Save This Studio!</button></p>
         </dl>
       </div>
     </div>
@@ -40,7 +40,7 @@
 
   <!-- show local storage-->
   <section>
-    <div class="saved">
+    <div class="saved" id="saved">
       <h2 class="studio-listing-heading">My Saved Studios</h2>
       <dl class="myStudios" ng-repeat="studio in storage.savedStudioList">
         <dt>Studio</dt>

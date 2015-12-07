@@ -10,6 +10,10 @@ font-family: 'Droid Serif', serif;
 }
 
 //"Found" Studios section
+.container-fluid {
+	padding-left: 0;
+	padding-right: 0;
+}
 .results {
 	display: inline-block;
 	width: 33%;

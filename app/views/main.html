@@ -19,6 +19,7 @@
   <!-- End Jumbotron and main images -->
   <!-- Results -->
   <section>
+    <div class="container-fluid">
     <div class="studio-data" id="search-results">
       <h2 class="studio-listing-heading" ng-if="StudiosFound">Studios Found</h2>
       <div class="individual-studio-data" ng-if="StudiosFound">
@@ -35,11 +36,13 @@
         </dl>
       </div>
     </div>
+  </div>
   </section>
   <!-- End results -->
 
   <!-- show local storage-->
   <section>
+    <div class="container-fluid">
     <div class="saved" id="saved">
       <h2 class="studio-listing-heading">My Saved Studios</h2>
       <dl class="myStudios" ng-repeat="studio in storage.savedStudioList">
@@ -54,4 +57,5 @@
         <p class="save-button-container"> <button class="btn btn-xs btn-default" ng-click="deleteStudio(studio)">Remove</button></p>
       </dl>
     </div>
+  </div>
   </section>

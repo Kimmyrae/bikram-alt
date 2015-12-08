@@ -19,7 +19,7 @@ font-family: 'Droid Serif', serif;
 	width: 33%;
 	height: 300px;
 	margin: 0;
-	padding: 3rem;
+	padding: 1rem;
 	background-repeat: no-repeat;
 	background-size: cover;
 	overflow: hidden;
@@ -80,7 +80,7 @@ section h2 {
 	width: 33%;
 	height: 300px;
 	margin: 0;
-	padding: 3rem;
+	padding: 1em;
 	background-repeat: no-repeat;
 	background-size: cover;
 	overflow: hidden;
@@ -91,6 +91,7 @@ section h2 {
 
 }
 // MOBILE STYLES
+
 @media (max-width: 768px) {
 	#portfolio {
 		/*background: #FF401D;*/
@@ -126,4 +127,30 @@ section h2 {
 			margin-bottom: 5%;
 		}
 	}
+}
+// mobile styles for results and saved studios
+// dl list (results and saved studio breakpoint is at width 500px)
+@media (max-width: 580px) {
+
+	dl {
+		width: 100%;
+	}
+	// #search-results {
+	// 	h2 {
+	// 		font-size: 3.125em; /* 50px/16px */
+	// 		line-height: 0.6em;
+	//
+	// 	}
+	//
+	// }
+	//
+	// #saved {
+	// 	h2 {
+	// 		font-size: 3.125em; /* 50px/16px */
+	// 		line-height: 0.6em;
+	//
+	// 	}
+	//
+	// }
+
 }
